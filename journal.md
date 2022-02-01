@@ -1,1 +1,8 @@
 
+## 2/1
+
+My initial idea is below:
+
+Climate change is a polarizing topic, and many people still do not believe that it is real. Social media, and tweets in particular, are a great way to gauge the trending views on a topic over time. In this project, the aim will be to show not only how the trends of social media expressions of climate change belief/disbelief have changed over time, but also to compare how the trends in these beliefs vary with the occurrence of large-scale natural disasters. Are people more likely to talk about climate change when Texas experiences an unprecedented storm and a large swath of the state loses power? Or when Australia experiences one of the worst wildfire disasters in history? Do these events lead to an uptick in assertions of climate change belief, or an uptick in assertions of disbelief? Can we predict the public’s response to a natural disaster in terms of their expressions about climate change? As these natural disasters become more prevalent, understanding how they impact the public’s views on climate change could provide useful guidance on how best to target climate change related messaging. 
+
+However, I’m also really interested in the urban planning aspect of climate science and how ML methods can help to create greener, more efficient cities. In the past week I have been spending many hours exploring urban transportation data in relation to climate change. I am interested in looking into different methods of transportation, including public transportation, ride-share services, and "last-mile" solutions like e-scooters and the new Revel moped scooters in NYC. I will continue exploring this dataspace this week before settling on a final project decision.
