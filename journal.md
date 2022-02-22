@@ -1,3 +1,14 @@
+## 2/22
+I've explored some other potential datasets for use as predictive features. The new datasets need to be able to join with the tree data on location, specifically lat and long. There is a temperature dataset on NYC Open Data that includes lat and long, and an air quality dataset that does not (but that might still be able to be joined with some extra code to parse the location data and transform it to lat and long coords). 
+
+I've also been working more with the tree data, wrangling the data into featuresets that are usable. This will be my main focus moving forward now, as I'd like to see if it is feasible to predict tree health in the future using the tree data itself, before moving to use other datasets to predict contemporary tree health (rather than tree health in the future).
+
+Next steps include:
+- Figuring out how to get the same set of features across all tree datasets, given that the data collected are different for each census
+- Feeding the finalized features and classes into a simple logistic regression model to get a baseline, then based on those results moving forward with other models if it seems like this approach is a good direction
+
+
+
 ## 2/15
 Nicolas gave some good feedback: the fact that there are only two time periods in the data (1995-2005 and 2005-2015) poses an issue since effectively I am trying to do a time based prediction with only 3 time points. The result will probably be inconclusive results due to noise. Other options:
 - Use this data (potentially augmented with other data that might pertain to tree health) to predict tree health (in the same time period)
