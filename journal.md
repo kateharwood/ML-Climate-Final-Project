@@ -1,3 +1,17 @@
+## 2/15
+Nicolas gave some good feedback: the fact that there are only two time periods in the data (1995-2005 and 2005-2015) poses an issue since effectively I am trying to do a time based prediction with only 3 time points. The result will probably be inconclusive results due to noise. Other options:
+- Use this data (potentially augmented with other data that might pertain to tree health) to predict tree health (in the same time period)
+- Use other data to predict tree health. The other data would need to at least have geospatially granular values on the street level for the 2005-2015 period and 2015-present period (and perhaps even good estimates extrapolating into the future to 2025). This could be air quality data, temperature data, noise data, etc.
+
+Currently I am thinking I might try out multiple of these approaches. I am still curious about using the tree data to predict future tree health, and might try that first. If that shows inconclusive results due to not having enough time points, I can pivot to one of the other options.
+
+Next steps include:
+ - Finalizing parsing the tree data into groups
+ - Potentially creating a visualization of the groupings (and tree health)
+ - Exploring model and feature selection options
+ - Exploring other potential datasets for use as predictive features
+
+
 ## 2/8
 In keeping with the theme of urban planning, I have been scouring the NY Open Data site and exploring the datasets there. I have learned a lot about transportation, green space, green roofs, etc in NYC. One of the most interesting datasets to me is the NYC Street Tree dataset. This is a survey done every 10 years (1995, 2005, 2015) by volunteers mapping and gathering data about every single street tree in the city. There is extensive data about the tree and its health in these datasets (type of tree, if there are telephone wires in its canopy, cracks in the sidewalk, even if there are sneakers present in the branches). The overall health of the tree is also recorded on a categorical scale from Excellent to Dead (data also includes a category for "Stump"). There are >500,000 recorded trees.
 
