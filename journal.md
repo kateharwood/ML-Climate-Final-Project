@@ -1,3 +1,15 @@
+## 3/1
+I've spent this week really digging into the data wrangling. Learning and re-learning some aspects of pandas has taken some time. Figuring out how to normalize differently recorded features and values across datasets is a challenge, but it has been an interesting problem to grapple with.  I am focused for now on predicting tree health using the tree data itself, starting with a small set of the tree features, and will then hopefully be able to incorporate more tree features as well as other dataset(s).
+
+The geospatial binning has also been an interesing problem to think about. I experimented with changing the size of the "box" I bin/group the trees by, but regardless of the size of the lat/lon box, there are some bins that include 100s of trees and some that include 1 tree. There doesn't seem to be a way around this, so I chose a "box" size that is roughly the same as 1/4 to 1/2 a city block. This is purely a subjective decision on what a reasonable grouping would look like; I believe that trees in the same part of a city block will probably have similar impacting factors on their health.
+
+Next steps include:
+- Continuing to parse the data into a format that is digestable by a model
+- Trying out a simple logistic regression model using some tree data to get a baseline
+- Based on these results, moving forward with other models and eventually other features/data
+
+
+
 ## 2/22
 I've explored some other potential datasets for use as predictive features. The new datasets need to be able to join with the tree data on location, specifically lat and long. There is a temperature dataset on NYC Open Data that includes lat and long, and an air quality dataset that does not (but that might still be able to be joined with some extra code to parse the location data and transform it to lat and long coords). 
 
