@@ -1,3 +1,7 @@
+## 2022-03-07 check in: alp
+
+Great. Would strongly encourage trying to cut corners to get to an initial model, no matter how bad it might be. Then you can swing back into the data wrangling with an additional set of ideas for new features etc.
+
 ## 3/1
 I've spent this week really digging into the data wrangling. Learning and re-learning some aspects of pandas has taken some time. Figuring out how to normalize differently recorded features and values across datasets is a challenge, but it has been an interesting problem to grapple with.  I am focused for now on predicting tree health using the tree data itself, starting with a small set of the tree features, and will then hopefully be able to incorporate more tree features as well as other dataset(s).
 
