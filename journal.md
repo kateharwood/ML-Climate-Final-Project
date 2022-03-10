@@ -1,3 +1,14 @@
+## 3/9
+Just saw the below note, thanks!
+
+I spent today trying to finalize the data into something usable. I realized I had made a mistake on the lat / lon binning earlier, and had to rework my methodology. This took a while both in coming up with the right algorithm and figuring out the fancy pandas logic to make it work (in the end my implementation wasn't quite as magical as it could have been in pandas - I used a for loop!)
+
+Now I have the parsed data ready to feed into a model. Next steps:
+- Try logistic regression
+- Check pairwise comparison of features
+- Try random forest
+- Either: add more features from tree dataset or add features from air quality dataset (this requires matching on lat/lon again...)
+
 ## 2022-03-07 check in: alp
 
 Great. Would strongly encourage trying to cut corners to get to an initial model, no matter how bad it might be. Then you can swing back into the data wrangling with an additional set of ideas for new features etc.
