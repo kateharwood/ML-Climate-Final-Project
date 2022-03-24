@@ -1,3 +1,19 @@
+## 3/23
+Today started playing with some baseline models using a few features (zip code, tree species, tree diameter, lat and lon bins). The target variable was the average health status of the lat/lon bin group of trees (rounded to one of 0,1,2,3). The dataset is unbalanced (way fewer 0s and 1s in the target variables), which could be something to fix in the future. (A note: each lat/lon bin group is approx the size of 1/4 a square city block.)
+
+The logistic regression acheived 51% accuracy. A random forest classifier acheived 77% accuracy. I also tried linear regression and random forest regression. The target variables were the average health status of the lat/lon bin group of trees, unrounded (roughly ~350 distinct numbers). The linear regression achieved a R2 score of 0.01 and the random forest regression achieved a score of 0.41. Lat and lon bin values had the most influence as features in the random forest regressor.
+
+TL;DR:
+- Ran logistic reg, linear reg, random forest classifiction and regression models
+- Random forest classifier showing some promise 
+
+Next Steps (need to decide the order of importance of these):
+- Potentially balance dataset?
+- Look into adding more features (they are very messy and categorical and all over the place, this will be tricky)
+- Try other model types on these features
+- Try adding another dataset, like air quality. This requires matching on lat and lon again, and figuring out how I want the years to match up (am I still predicting future or not?)
+- Later on: create visualization of trees and health statuses for presentation
+
 ## 3/9
 Just saw the below note, thanks!
 
