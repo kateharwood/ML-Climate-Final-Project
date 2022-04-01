@@ -1,5 +1,19 @@
+## 3/31
+I played around with balancing the dataset in different ways: oversampling and undersampling. The undersampling performed poorly, but the oversampling boosted the accuracy of the RandomForestClassifier (the best performing model of the ones I tried last week) a few points to 81%. I then performed grid search cross validation, tuning the hyperparams (# of trees and decision criterion). The grid search ran for hours, and the best model used 1000 trees and entropy as the decision criteria, however there was no actual bump in scores when that model was run on test data vs. the model using the default params (100 trees and gini).
+
+I also parsed and included the "wires" and "sidewalk cracked / raised" data from the original tree data. These are the only other non-location based features that both the 1995 and 2005 data have. Oddly, including this data made the accuracy of the RandomForestClassifier decrease slightly (81% -> 79%). I tried training on more trees to see if this would help since there were more features now, but it didn't improve the numbers.
+
+The results from all these trials are included in the slides in the etc/ directory.
+
+Next Steps:
+- Create visualization of the trees and their health and lat/lon binning
+- Start planning video presentation
+- Look into adding another dataset (air quality)
+- Potentially try other model types
+
+
 ## 3/23
-Today started playing with some baseline models using a few features (zip code, tree species, tree diameter, lat and lon bins). The target variable was the average health status of the lat/lon bin group of trees (rounded to one of 0,1,2,3). The dataset is unbalanced (way fewer 0s and 1s in the target variables), which could be something to fix in the future. (A note: each lat/lon bin group is approx the size of 1/4 a square city block.)
+Today I started playing with some baseline models using a few features (zip code, tree species, tree diameter, lat and lon bins). The target variable was the average health status of the lat/lon bin group of trees (rounded to one of 0,1,2,3). The dataset is unbalanced (way fewer 0s and 1s in the target variables), which could be something to fix in the future. (A note: each lat/lon bin group is approx the size of 1/4 a square city block.)
 
 The logistic regression acheived 51% accuracy. A random forest classifier acheived 77% accuracy. I also tried linear regression and random forest regression. The target variables were the average health status of the lat/lon bin group of trees, unrounded (roughly ~350 distinct numbers). The linear regression achieved a R2 score of 0.01 and the random forest regression achieved a score of 0.41. Lat and lon bin values had the most influence as features in the random forest regressor.
 
