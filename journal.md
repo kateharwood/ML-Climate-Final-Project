@@ -1,3 +1,12 @@
+## 4/6
+I created geo visualizations of tree health and tree lat/lon bins to go along with the final project and to use in the video presentation.
+
+Next Steps:
+- Create video presentation
+- Try adding air quality dataset
+- Try another model type (maybe NN)
+- Create paper outline
+
 ## 3/31
 I played around with balancing the dataset in different ways: oversampling and undersampling. The undersampling performed poorly, but the oversampling boosted the accuracy of the RandomForestClassifier (the best performing model of the ones I tried last week) a few points to 81%. I then performed grid search cross validation, tuning the hyperparams (# of trees and decision criterion). The grid search ran for hours, and the best model used 1000 trees and entropy as the decision criteria, however there was no actual bump in scores when that model was run on test data vs. the model using the default params (100 trees and gini).
 
