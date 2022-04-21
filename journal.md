@@ -1,3 +1,34 @@
+## 4/20
+(No entry last week because I was working on making the video presentation)
+
+This week I worked on adding more data to my features, and trying different models. I dug into the NYC open data air quality dataset (really thorough, has everything like ozone, nitrogen, particulate matter, traffic density, even deaths from pollution), but realized that the geographical features were not granular enough (the smallest was on the UNH42 level) and the data did not go back far enough (earliest data was 2005). I realized that needing data from earlier than 2005 and as far bck as 1995 might be an issue since there wasn't as much data collection then as there is now! 
+
+I searched the NYC open data site for datasets with lat and lon. I found the PLUTO dataset (Primary Land Use Tax Lot Output) which had relevant features like "land use" (what the lot is used for, ex: parkinglot, one family home, commercial, etc) and "num floors" (how many floors the building on the land plot has), and also went back further than 2005. I used the same methods as I did with the tree data to bin this data by lat and lon, and then joined it with the tree data. I also excluded buildings that were built after 2005, since we do not want to use that data.
+
+I then experimented with using this data in the models. It is impt to note that because there were fewer lat/lon bins that were overlapping between the tree data and the PLUTO data, the overall dataset for this experiment had much fewer examples (3091 compared to over 500,000). In the paper I will dig much deeper into the methods and results I used to experiment with the new and old data and analyze the results, but a quick overview here:
+
+The data including PLUTO features had better accuracy (.93) but a lower F1 score (.66) than the sole tree data (.81 and .75 respectively). I also analyzed which features were the most important (lat bin and num floors are most important, sidewalk cracks and wires are least important, more detail will be included in the paper). 
+
+I also tried GradientBoosting and an SVM classifiers. The Gradient Boosting model performed about as well as the RandomForest, while the SVM did not perform as well.
+
+I have a lot of ideas and more analysis that might give some insight into the *whys* of the results I obtained, which will be included in the paper.
+
+Next Steps
+- Create paper outline
+- Run best models multiple times to get average results and stddev for final paper results
+- Clean up code
+- Write README
+- Make the results slides better looking
+
+## 4/6
+I created geo visualizations of tree health and tree lat/lon bins to go along with the final project and to use in the video presentation.
+
+Next Steps:
+- Create video presentation
+- Try adding air quality dataset
+- Try another model type (maybe NN)
+- Create paper outline
+
 ## 3/31
 I played around with balancing the dataset in different ways: oversampling and undersampling. The undersampling performed poorly, but the oversampling boosted the accuracy of the RandomForestClassifier (the best performing model of the ones I tried last week) a few points to 81%. I then performed grid search cross validation, tuning the hyperparams (# of trees and decision criterion). The grid search ran for hours, and the best model used 1000 trees and entropy as the decision criteria, however there was no actual bump in scores when that model was run on test data vs. the model using the default params (100 trees and gini).
 
