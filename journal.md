@@ -1,3 +1,12 @@
+## 4/27
+This week I completed final validation of my best model, cleaned up the results slides and started creating a detailed outline for my paper.
+
+Final Steps
+- Write paper
+- Clean up code
+- Write README
+
+
 ## 4/20
 (No entry last week because I was working on making the video presentation)
 
