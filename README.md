@@ -1,21 +1,38 @@
-# ML-Climate-Final-Project-Template
+# Predicting NYC Street Tree Health
 
-Throughout the semester each student will work on an individual project, which you will summarize in a final technical paper. You will showcase and document your work through a private git repository following this template.
+  The importance of city greenery is growing with the increasing urbanization of the world.
+Urban trees provide many benefits like temperature regulation, stormwater runoff reduction, and
+air pollutant removal. However, trees must grow to maturity before many of these advantages
+can be realized. Keeping vegetation thriving in a city is difficult, especially so for street
+trees that are not able to benefit from an urban park ecosystem. From living in concrete root
+beds in the shadows of tall buildings, to serving as pets’ toilets and humans’ trash cans, urban
+trees face many obstacles to staying alive and healthy; the average life of a street tree in
+a dense urban environment is only 13 yeara. More information on what factors affect the
+health of urban street trees can help facilitate the growth of vitality important green ecosystems
+in our cities.
 
-The organization of this repository is as follows:
+  This research shows that the future health of New York City’s half a million street trees
+can be predicted on a relatively granular level with high accuracy using data collected from NYC
+street tree censuses and publicly available land use data. Given information about trees and the
+surrounding buildings in a quarter block radius, my models can predict the average health of
+trees in the given area 10 years later with greater than 90% accuracy.
 
-```
-abstract.md
-journal.md
-doc/
-src/
-etc/
-```
-- The file `abstract.md` simply contains an abstract of the project. At first, it is an aspirational abstract, one that describes the research program you want to complete. You will refine it through the semester.
-- The file `journal.md` is a diary of your progress. It contains dated entries with a description of what you are doing, what you found, what you are thinking, and so on. It is mainly a resource for you, but I will glance at it too (at the end of the semester). Please update and commit it at least once per week.
-- The `doc/` directory contains the LaTeX document that you are writing. We will provide a template for your final paper.
-- The `src/` directory contains the code you are writing. The data you are analyzing should live here too.
-- The `etc/` directory contains anything else — materials, notes, photos of whiteboards, and so on — that you want to keep track of.
-There should be nothing else in the top level directory of your repository.
+  A variety of models were trained on different feature groupings, with the highest model
+achieving an accuracy of 91.7% and a Macro F1 score 85.1% on a 4-way categorical health
+status classification task. Location information and nearby building size are shown to be the
+most important features for accurate prediction.
 
-Commit often, at least every week. You are graded on the quality of the project and the path that you took to get there.
+
+**Project Structure**
+- `journal.md` contains weekly progress updates
+- The `doc/` directory contains 
+  - the final paper
+  - a pdf of all the model results
+  - images that are included in the final paper
+  - video presentation of part of the work.
+- The `src/` directory contains
+  - the raw data and parsed data
+  - code for parsing the data
+  - code for training models on the data
+  - code for creating geo visualizations of trees and health statuses
+
