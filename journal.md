@@ -1,3 +1,6 @@
+## 5/2
+This week I wrote the final paper and cleaned up all the code. Thanks for a great semester!
+
 ## 4/27
 This week I completed final validation of my best model, cleaned up the results slides and started creating a detailed outline for my paper.
 
