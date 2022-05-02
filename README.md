@@ -2,12 +2,12 @@
 
 The importance of city greenery is growing with the increasing urbanization of the world.
 Urban trees provide many benefits like temperature regulation, stormwater runoff reduction, and
-air pollutant removal [9]. However, trees must grow to maturity before many of these advantages
-can be realized [10]. Keeping vegetation thriving in a city is difficult, especially so for street
+air pollutant removal. However, trees must grow to maturity before many of these advantages
+can be realized. Keeping vegetation thriving in a city is difficult, especially so for street
 trees that cannot benefit from an urban park ecosystem. From living in concrete root beds in
 the shadows of tall buildings, to serving as pets’ toilets and humans’ trash cans, urban trees
 face many obstacles to staying alive and healthy [10]; the average life of a street tree in a dense
-urban environment is only 13 years [8]. Gaining information on what factors affect the health
+urban environment is only 13 years. Gaining information on what factors affect the health
 of urban street trees can help facilitate the growth of vitally important green ecosystems in our
 cities.
 
